@@ -1,129 +1,73 @@
 package org.example;
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        // ========v3
-//      int dan = 8;
-//      int i = 1000;
-//      while(i>=1){
-//          System.out.println(dan + " * " + i +"=" + dan * i );
-//          i--;
-//      }
-// =================v3 for.ver
-//        int dan = 8;
-//        for(int i =1000; i>=-25; i--){
-//            System.out.println(dan + " *" + i + "=" + dan * i);
+//    int rows =4; // 변수 성립
+
+//    for (int i = 1; i <= rows; i++){  //for문 변수 i 정의 i에서 rows 개수까지 i는 증강연산
+//        for(int k =1; k <= i; k++){ //작은 for문 변수 k를 i까지 k도 i처럼 증강연산
+//            System.out.print("* "); // 별 출력
 //        }
-//============= v4
-//        int dan = 8;
+//        System.out.println();  //  위에줄 k에서 별 출력 줄바꿈
+//    }                          //반복문 안에있으니 줄바꿈 출력  k도 증강연산 적용이라
 //
-//      int i = 1000;
-//      while(i>=-500){
-//          System.out.println(dan + " * " + i +"=" + dan * i );
-//          i--;
-//      }
+        //i는 rows 와 연동되어 네줄까지 바꾸고 k 별도 i와 마찬가지로 4개까지 나타냄
 
-        // =================v4 for.ver
-//        int dan = 8;
-//        for(int i =1000; i>=-500; i--){
-//            System.out.println(dan + " *" + i + "=" + dan * i);
+
+//    int i =1;
+//            while(i<=rows){
+//                int k = 1;
+//                while(k<=i){
+//                    System.out.print("* ");
+//                    k++;
+//                }
+//                System.out.println();
+//                i++;
 //        }
 
-/// ==========v5
-//        int i =1;
-//        int j =0 ;
-//        while (i <= 5) {
-//            j = j + i;
-//
-//            i = i + 1;
-//        }
-
-        // =================v5 for.ver
-
-//        int sum = 0;
-//        for(int i = 1; i<=5; i++){
-//            System.out.println("i의 값 :" + i);
-//            sum = sum + i;
-//            System.out.println("sum의 값 :" + sum);
-//
-//        }
-//        System.out.println(sum);
-
-//=================v6
-//        int i =-100;
-//        int j =0;
-//        while (i <= 25) {
-//            j = j + i;
-//
-//            i = i + 1;
-//        }
-//        System.out.println(j);
+        //        코드가 어떤식으로 진행되는지 설명할수있을정도로 방법 이해할것
 
 
-//        System.out.println("===for===");
-//        for (int n = 1; n < 3 ; n++){
-//
-//            System.out.println(n);
-//            n++;
-//        }
-
-        // =================v6 for.ver
-
-//        int sum = -100;
-//        for(int i = 0; i<=25; i++){
-//
-//            sum = sum + i;
-//
-//
-//        }
-//        System.out.println(sum);
-
-
-// =============v2
-//        int i = -100;
-//        while (i <= 25) {
-//            System.out.println(i);
-//            i++;
-
-// =============v2 for.ver
-//        for( int i= -100; i<=25; i++){
-//            System.out.println(i);
-//        }
-
-//        }
-//==============v1
-//        int i = 1;
-//        while(i <=5){
-//            System.out.println(i);
-//            i++;
-//        }
-
-        //  ====v1 for.ver
-//        for(int i=1; i<=5; i++){
-//            System.out.println(i);
-//        }
-
-//        =======================v7===========
-        int i = 1;
-        int j = 1;
-        while (j <= 10) {
-            while (i <= 3) {
-                System.out.println(i);
-                i++;
-            }
-            i = 1;
-            j++;
-
-        }
-        // =========v7 for.ver
-//        for(int j = 1; j<=10 ; j ++) {
-//            for (int i = -1; i <= 3; i++) {
-//                System.out.println(i);
+//        int n = 13;
+//        for (int i = 1; i <= n; i++) {
+//            for (int j = i; j < n; j++) {
+//                System.out.print(" ");
 //            }
+//            for (int k = 1; k <= (2 * i - 1); k++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//        for (int i = n - 1; i >= 1; i--) {
+//            for (int k = n; k > i; k--) {
+//                System.out.print(" ");
+//            }
+//             for (int k = 1; k <= (2 * i -1); k++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
 //        }
 
+//     char c = 'a';
+//
+//        System.out.println(c);
+//        System.out.printf("%c \n" , c); // %는 서식지정자
+//
+//        int a = 97;
+//
+//        System.out.println(a);
+//        System.out.printf("%d\n" , a); //%d 는 서식 지정자 문자를 정수로 해석하겠다는뜻
+//        System.out.printf("%c\n" , a); //%c 는 서식 지정자로 정수를 문자로 해석 하겠다는뜻
+//        // %f는 문자를 실수로 해석 %s는 문자열로 해석
+//
+//        int aa = 65 + 3;
+//
+//        System.out.printf("%c\n" , aa);
 
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        System.out.println( "num : "+ num);
     }
-}
-
-
+    }
