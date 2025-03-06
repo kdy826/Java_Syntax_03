@@ -5,59 +5,83 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       String a = sc.nextLine();
+       String A[] = a.split("\\.");
+        int b = Integer.parseInt (A[0]);
+        int c = Integer.parseInt (A[1]);
+        int d = Integer.parseInt (A[2]);
+
+        System.out.println(String.format("%04d,%02d,%02d",b ,c ,d));
+
+
+
+
 
     }
 }
 
-
-// =========== 코드업 19 번 문제 타입
-///        Scanner sc = new Scanner(System.in);
-//
-//
-//        String a = sc.next(); //문자형  타입a를 스트링을 입력하게 지정
-//
-//        String date[] = a.split("\\."); // 문자열 a를 .을 기준으로 분리하여
-// 문자열 a에 저장
-//        int yy = Integer.parseInt(date[0]);
-//        int mm = Integer.parseInt(date[1]);
-//        int dd = Integer.parseInt(date[2]);
-//
-//      //  System.out.println(year+"."+"%02d",month+day);
-//        System.out.printf(String.format("%04d-%02d-%02d",yy,mm,dd));
+//============== 코드업 24문제 단어 한개를 부분별로 나누어서 출력
+//Scanner sc = new Scanner(System.in);
+//String a = sc.next();
+//String[] b = a.split("");
+//     for (int i=0 ; i < b.length ;i++){  // 정수 i를 만들어 i가 b의 문자 갯수만큼 반복문
+//        System.out.println("'"+ b[i] + "'");  // 양쪽에 '를 붙여 'b.length' 반복
+//     }
 //
 
-// ============= 코드업 20문제 replaceAll함수의 매개변수
-//          Scanner sc = new Scanner(System.in);  //스캐너 불러오기
-//          String a = sc.next();  // 문자형 타입 a를 스트링으로 입력하게만듬
-//
-//          a = a.replaceAll("-","");
-//          // replaceAll 함수는 대상문자열을 원하는 문자값으로 변환하는 함수이며
-//          // 첫번째 매개변수는 변환하고자 하는 대상이 될 문자열
-//          // 두번째 매개변수는 변환할 문자 값
-//
-//        System.out.println(a);  //문자형 a 출력
-
-//==================코드업 23문제 실수 하나를 부분별로 출력하기
+// ==================코드업 23문제 소수점을 .을 기준으로 정수로 부분 출력하기
 //Scanner sc = new Scanner(System.in);
 //
 //String a = sc.next();
 //String[] A = a.split("\\.");
 //        System.out.println(String.format("%s\n%s",A[0],A[1]));
 
+//==================코드업 25문제 정수입력받아 나누어 출력하기
 
+//        Scanner sc = new Scanner(System.in);
+//        String a = sc.next(); //문자타입 a생성
+//        char[] b = a.toCharArray(); // b라는 문자열 배열을 만들고 a를 배열안에 집어넣음
+//        for (int i = 0; i < b.length; i++) { //정수 i를 b문자열 길이만큼 반복하도록 설정
+//            System.out.printf("[" + b[i]); // b안에 글자마다 "["를 붙임
+//            for (int j = b.length - 1; j > i; j--) { //2중반복문 정수 j를 문자열b 길이만큼
+//                //줄어들도록 설정 -1을 붙인 이유는 첫번째 반복문이 '거짓'이 되려면
+//                // b.length의 길이보다 1더 길어야 거짓이 되기 때문
+//                System.out.printf("0");      //b배열의 자리수만큼 0생성
+//            }
+//            System.out.println("]");       // 두번째 반복문에서 0을 만들고 마지막에 "]"로 닫음
+//        }
+
+//===================코드업 26문제 시간의 분만 출력하기
+//
+//Scanner sc = new Scanner(System.in);  //
+//String a = sc.next();
+//String s[] = a.split(":");
+//
+//
+//        if (s[1].equals("00"))
+//        System.out.println("00");
+//        else
+//                System.out.println(s[1]);
+
+// ======================코드업 12번문제 실수 그대로 출력하기
 
 //Scanner sc = new Scanner(System.in);
 //
-//String num1 = new String("1234"); //num1에 문자타입 1234 넣음
+//Double a = sc.nextDouble();
+//       sc.close();
+//        System.out.printf("%f" ,  a);
+
+//==================== 코드업 19문제
+
+//Scanner sc = new Scanner(System.in);
+//String a = sc.nextLine();
+//String A[] = a.split("\\.");
+//int b = Integer.parseInt (A[0]);
+//int c = Integer.parseInt (A[1]);
+//int d = Integer.parseInt (A[2]);
 //
-//String num2 = new String("4321"); // num2에 문자 타임 4321을 넣음
-//int num3 = sc.nextInt();
-//int num = Integer.parseInt(num1); // 문자타입인 num1(1234) 을 정수형 num(1234)로 변환
-//int num4 = Integer.parseInt(num2);// 문자타입인 num2(4321) 을 정수형 num4(4321)로 변환
+//        System.out.println(String.format("%04d,%02d,%02d",b ,c ,d));
 //
-//
-//        System.out.println(num + num4); //문자타입 숫자들인 1234,4321이 정수형으로 바뀌었기때문에
-////결과값은 5555가 나옴
-//
-//        System.out.println(num+ num3); //마찬가지로 문자타입이 정수가 되었기에
-////기존에 정수타입이었던 num3이랑 합이 가능함
+
+
