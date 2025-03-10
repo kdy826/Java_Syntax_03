@@ -5,62 +5,70 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-      boolean[] arr1 = new boolean[3];
-      arr1[0] = true;
-      arr1[1] = false;
-      arr1[2] = true;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println();
+        car sonata = new car();
+        sonata.year = 19;
+        sonata.maxSpeed = 150;
+        sonata.color = "주황색";
+
+
+        System.out.println(sonata.year +"," + sonata.maxSpeed + ","+ sonata.color);
 
 
     }
 }
+class car{
+    String model;
+    int year ;
+    String color;
+    int maxSpeed;
 
-//int a = 10;
+
+}
+//     int a = 10;
 //
-//     int[]arr;  // 정수들 int[] 모양으로 만들어진 객체의 리모컨만 들어갈수있는 arr라는 변수를 만든다.
-//     arr = new int[5]; //arr라는 변수에 int[5] (설계도)로 만든 객체의 리모컨을을 넣겠다.
+//     int[] arr = new int[5];
+//
+//     int[][]arr2 = new int[2][3];
+//
+//     arr2[0][0] = 1;
+//     //..
+//     arr2[0][2] = 3;
+
+//Scanner sc = new Scanner(System.in);
+//
+//int[] 철수0 = new int[3];
+//// 철수0[0] = 12; -> 데이터의 의미?
+//// 자바에서 기본으로 제공하는 기본 객체타입
+//// 하나의 객체에 여러개의 타입 x
+//
+//IntArr intArr = new IntArr();
+//// 클래스가 정의되어있지않으면 클래스를 직접만든다.
 //
 //
-////     int[]arr = new int[5];  // 위에 두개를 합친 코드
 //
-////     arr[0] = 10;
-////     arr[1] = 20;
-////     arr[2] = 30;
 //
-//        for(int b = 0; b< arr.length; b ++){
-//            arr[b] = (b+1) *10;
+//철수 a = new 철수();
+////사용자 정의 객체를 만들고싶어 -> 위의 이유 때문에
+////사용자 정의 객체는 여러개의 타입 사용가능 자유도
+//a.이름 =" 김철수";
+//a.나이 = 23;
+//a.키 = 165.3;
 //
 //        }
 //
-////     int sum = arr[0] +arr[1] + arr[2];
-//     int sum = 0;
-//     for (int i = 0 ; i< arr.length; i++){
-//         sum += arr[i];
-//     }
-//     int avg = sum / arr.length;
-////        System.out.println(arr[0]);
-////        System.out.println(arr[1]);
-////        System.out.println(arr[2]);
-////        System.out.printf("첫번째 : %d , 두번째 : %d,세번째 : %d, 총합 : %d" ,arr[0] ,arr[1] , arr[2] , arr[0] +arr[1] + arr[2]);
-//        System.out.println("총합"+ sum);
-//        System.out.println("평균" + avg);
-
-
-
-//    boolean []arr1 = new boolean[3];
-//    arr1[0] = true;
-//    arr1[1] = false;
-//    arr1[2] = true;
-//    double []arr2 = new double[3] ;
-//     arr2[0] = 3.14;
-//     arr2[1] = 7.77;
-//     arr2[2] = 11.11;
-//     int []arr3 = new int[10];
-//        System.out.println("arr1:" +"["+arr1[0] +","+ arr1[1]+","+ arr1[2] + "]");
-//        System.out.println("arr2:"+ " ["+arr2[0] +","+ arr2[1]+","+ arr2[2] + "]");
-//    int a = 0;
-//     for(int i = 0; i<arr3.length ; i++){
-//        arr3[i] = (i+1);
-//         System.out.printf("%d", arr3[i] );
-//     }
+//
+//        }
+//class 철수{    //설계도가 없을때는 설계도를 직접 만든다.
+//
+//    String 이름;
+//    int 나이;
+//    double 키;
+//
+//}
+//
+//
+//class IntArr{
+//
+//}
