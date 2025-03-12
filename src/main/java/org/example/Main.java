@@ -6,74 +6,95 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        boolean result = Math.isPrimeNumber(1);
-        System.out.println("1은(는) 소수인가? : " + result);
+//        boolean result = Math.isPrimeNumber(1);
+//        System.out.println("1은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(2);
+//        System.out.println("2은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(3);
+//        System.out.println("3은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(4);
+//        System.out.println("4은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(5);
+//        System.out.println("5은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(7);
+//        System.out.println("7은(는) 소수인가? : " + result);
+//
+//
+//        result = Math.isPrimeNumber(8);
+//        System.out.println("8은(는) 소수인가? : " + result);
+//
+//
+//        result = Math.isPrimeNumber(9);
+//        System.out.println("9은(는) 소수인가? : " + result);
+//
+//
+//        result = Math.isPrimeNumber(10);
+//        System.out.println("10는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(11);
+//        System.out.println("11은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(12);
+//        System.out.println("12은(는) 소수인가? : " + result);
+//
+//        result = Math.isPrimeNumber(13);
+//        System.out.println("13은(는) 소수인가? : " + result);
+//
+//
+//        result = Math.isPrimeNumber(14);
+//        System.out.println("14은(는) 소수인가? : " + result);
+//
+//
+//        result = Math.isPrimeNumber(15);
+//        System.out.println("15은(는) 소수인가? : " + result);
 
-        result = Math.isPrimeNumber(2);
-        System.out.println("2은(는) 소수인가? : " + result);
 
-        result = Math.isPrimeNumber(3);
-        System.out.println("3은(는) 소수인가? : " + result);
+//        int rs = one_to_n_prime_numbers_count(2);
+//        System.out.println("rs : " + rs);
+//        // rs : 4
+//        rs = one_to_n_prime_numbers_count(3);
+//        System.out.println("rs : " + rs);
+//
+//        rs = one_to_n_prime_numbers_count(5);
+//        System.out.println("rs : " + rs);
+//
+//    }
+//    static int one_to_n_prime_numbers_count(int a){
+//        int count = 0;
+//
+//        for(int i = 1 ; i<= a ; i ++){
+//            if (Math.isPrimeNumber(i)){
+//                System.out.println(i);
+//                count ++;
+//            }
+//        }
+//
+//        return count;
+//    }
+//}
+//
+//class Math {
+//    static boolean isPrimeNumber(int a) {
+//        if ( a ==1 ){
+//            return false;
+//        }
+//        for(int i = 2; i<a ; i++) {
+//            if(a % i == 0) {
+//
+//                return false;
+//            }
+//        }
+//// return a / 2 == 1 ;
+//
+//        return true;
+    } // 소수 참트루 함수
 
-        result = Math.isPrimeNumber(4);
-        System.out.println("4은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(5);
-        System.out.println("5은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(6);
-        System.out.println("6은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(7);
-        System.out.println("7은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(8);
-        System.out.println("8은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(9);
-        System.out.println("9은(는) 소수인가? : " + result);
-        result = Math.isPrimeNumber(10);
-        System.out.println("10은(는) 소수인가? : " + result);
-
-        int rs = Math.one_to_n_prime_numbers_count(2);
-        System.out.println("rs : " + rs);
-        // rs : 4
-        rs = Math.one_to_n_prime_numbers_count(3);
-        System.out.println("rs : " + rs);
-
-        rs = Math.one_to_n_prime_numbers_count(5);
-        System.out.println("rs : " + rs);
-
-        rs = Math.one_to_n_prime_numbers_count(6);
-        System.out.println("rs : " + rs);
-
-        rs = Math.one_to_n_prime_numbers_count(7);
-        System.out.println("rs : " + rs);
-        // rs :  6
-
-    }
 }
-
-class Math {
-    static boolean isPrimeNumber(int a) {
-        if(a %2 == 0){
-            return false;
-        }
-        else if ( a% 2 == 1){
-            return true;
-        }
-//       return a / 2 == 1 ;
-    }
-
-    static int one_to_n_prime_numbers_count(int i) {
-        int a = 0;
-
-        if (i % 2 == 1) {
-
-            System.out.println("소수입니다");
-
-
-        } else {
-            System.out.println("소수가 아닙니다");
-        }
-        return i;
-
-    }
 
 
 //     void int one_to_n_prime_numbers_count(int i) {
@@ -81,7 +102,7 @@ class Math {
 //
 //        return i;
 //      }
-}
+// }
 
 // === 매개변수  메소드 시그니처 전역변수
 //        //계산기 합();
