@@ -1,69 +1,68 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main4 {
     public static void main(String[] args) {
-        사람 a사람 = new 김철수();
+        char c1 = 'a';
+        char c2 = 'a';
 
+        System.out.println(c1 == c2); // true
 
-        System.out.println("===사람정보");
-        System.out.printf("이름: %s\n", a사람.이름);
-        System.out.printf("나이: %d\n", a사람.나이);
+        // String 은 char의 순서있는 조합이다.
+        String s1 = "하하";
+        String s2 = "하";
+        s2 += "하";
 
-
-        사람 b사람 = new 사람();
-
-        b사람.이름 = "이영희";
-        System.out.println("====사람정보");
-        System.out.printf("이름: %s\n", b사람.이름);
-        System.out.printf("나이: %d\n", b사람.나이);
-
-        전사 a = new  전사();
+        System.out.println(s1 == s2); // false
+        System.out.println(s1.equals(s2)); // true
     }
-
-
 }
-class 전사{
-
-}
-
-class 사람 { //생성자는 클래스타입과 같은이름을  가져감
-    String 이름;
-    int 나이;
-
-//     void 나이를 _22_살_로설정(){ //수동
-//          this.나이 = 22;
-//    }
-    사람(){  //생성자 자동
-          System.out.println("사람 나이 생성자 실행됨");
-          this.나이 = 22;
-    }
-    사람(String 이름){  //생성자 자동
-        System.out.println("사람 이름 생성자 실행됨");
-        this.이름 = 이름;
-    }
-
-}
-class 김철수 extends 사람{
-   김철수(){
-       System.out.println("김철수 생성됨");
-       this.이름 = " 김철수";
-   }
-}
-
-
-//     인간 a사람 = new 인간();
-//     a사람.나이 = 22;
-//     a사람.왼팔 = new 팔(); // 클래스 팔 생성
-//     a사람.왼팔.길이 = 10;  //a사람으로부터 인스턴스변수 왼팔에서
-//                            // 팔객체 길이까지 두번이동
+//  String s ="하";
+//  char a ='하';
+//
+//
+//  char cc = 'a';
+//  cc = 'b';
+//
+//  String ss = "abc" + " ";
 //
 //    }
+//}
+
+//        List<Number> l = new ArrayList<>(); // 동적 할당(dynamic allocation)
+//        l.add(10);
+//        l.add(20);
+//        l.add(30);
+//        l.add(40);
+//        l.add(50);
+//
+//        l.remove(3);
+//        System.out.println(l);
+//
+//    }
+
+
+//        int rs = 계산기.나누다(10, 0);
+//        System.out.println(rs);
+//        System.out.println(123);
+//    }
+////catch (Exception e){ // exception 은 예외처리 오류중 최상의 오류
+//    // 모든오류를 다 넘겨줌
+////    }
 //
 //}
-//class 인간{
-//    int 나이;
-//    팔 왼팔;  //인스턴스 변수에는 팔의 리모콘 왼팔을 넣는다.
-//}
-//class 팔{
-//   int 길이;
-//}
+//class 계산기 {
+//    static int 나누다(int a, int b) {
+////        return a/b;
+//        int rs = 0;
+//        try {  // 만약 rs = a/b 가 잘못되면 넘어가
+//            rs = a / b;
+//        } catch (ArithmeticException e) { // e는  변수
+//            System.out.println("try 중에 잘못됨");
+//
+//        }
+//        return rs;
+//    }
+
