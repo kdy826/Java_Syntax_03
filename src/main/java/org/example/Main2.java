@@ -1,4 +1,9 @@
 package org.example;
+import java.util.HashMap;
+import java.util.Map;
+
+import java.util.List;
+import java.util.ArrayList;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -40,24 +45,28 @@ class 사람인력관리소 {
     사람 사람2; // 두 번째 사람을 저장하는 변수
     사람 사람3; // 세 번째 사람을 저장하는 변수
     int 사람수 = 0; // 사람 수를 세는 변수
+
     String 이름; // 이름 변수
     int 나이; // 나이 변수
     int 숫자; // 숫자(몇 번째 사람인지를 나타냄)
 
     // 사람을 추가하는 메서드
     void add사람(String 이름, int 나이) {
+        int 번호 = 사람수+1;
         사람수++; // 사람 수를 1 증가
         사람 a사람 = new 사람(이름, 나이, 사람수); // 새로운 사람 객체 생성
+        a사람.번호 = 번호;
+        a사람.이름 =이름;
+        a사람.나이 =나이;
 
-        // 사람수에 따라 사람 객체를 각각 사람1, 사람2, 사람3에 할당
-        if (사람수 == 1) {
-            사람1 = a사람; // 첫 번째 사람
-        } else if (사람수 == 2) {
-            사람2 = a사람; // 두 번째 사람
-        } else if (사람수 == 3) {
-            사람3 = a사람; // 세 번째 사람
+
+        if(번호 ==1){
+            사람1 = a사람;
+        }if(번호 ==2){
+            사람2 = a사람;
+        }else if(번호 ==3){
+            사람3 = a사람;
         }
-
         // 새로 추가된 사람에 대한 정보를 출력
         System.out.println("나이가 " + 나이 + "살인 " + 사람수 + "번째 사람(" + 이름 + ")이 추가되었습니다.");
 
@@ -66,12 +75,15 @@ class 사람인력관리소 {
     }
 
     // 사람 번호에 맞는 사람을 반환하는 메서드
-    사람 get사람(int 숫자) {
-        if (숫자 == 1) return 사람1; // 1번 사람 반환
-        if (숫자 == 2) return 사람2; // 2번 사람 반환
-        if (숫자 == 3) return 사람3; // 3번 사람 반환
-
-        return null; // 1, 2, 3 외의 숫자일 경우 null 반환
+    사람 get사람(int 번호) {
+        if(번호 ==1){
+            return 사람1;
+        }if(번호 ==2){
+            return 사람2;
+        }else if(번호 ==3){
+            return 사람3;
+        }
+        return null;
     }
 }
 
